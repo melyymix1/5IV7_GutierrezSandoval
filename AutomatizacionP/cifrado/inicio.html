@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Cifrado César</title>
+    
+</head>
+<div class="header">
+    <header></header></div>
+<body>
+    <div class="contenedor">
+        <div class="CIFRADO">
+            <h2 class="c-title">Cifrar</h2>
+            <hr>
+            <br>
+            <div class="content">
+            <input type="text" class="problema-input" placeholder="Ingresa la palabra que deseas cifrar, en caso de ser una frase, separa las palabras con un espacio:" id="p1-input">
+            <button type="button" class="problema-button" onclick="return cifrar()" 
+            style="margin-top: 1rem;">Cifrar</button>
+            <button type="button" class="problema-button2" onclick="borrar1()">Borrar</button>
+            <pre class="problema-output" id="p1-output">Esperando datos...</pre>
+            </div></div>
+        <div class="DESCIFRAR">
+            <h2 class="c-title">Descifrado</h2>
+            <hr>
+            <br>
+            <div class="content">
+            <input type="text" class="problema-input" placeholder="Ingresa la palabra que deseas descifrar, en caso de ser una frase, separa las palabras con un espacio:" id="p2-input">
+            <button type="button" class="problema-button" onclick="return descifrar()" 
+            style="margin-top: 1rem;">Descifrar</button>
+            <button type="button" class="problema-button2" onclick="borrar2()">Borrar</button>
+            <pre class="problema-output" id="p2-output">Esperando datos...</pre>
+        </div>
+        </div>
+    </div>
+    <script src="./funciones.js"></script>
+</body>
+</html>
